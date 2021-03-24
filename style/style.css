@@ -70,11 +70,17 @@ div#user > img[alt="user"] {
 }
 
 div#share {
-    width: 25px;
-    height: 25px;
-    border-radius: 25px;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
     background-color: hsl(210, 46%, 95%);
     justify-content: center;
+    color: hsl(217, 19%, 35%);
+}
+
+div#share:hover {
+    background-color: hsl(217, 19%, 35%);
+    color: white;
 }
 
 div#user-details {
@@ -87,5 +93,12 @@ div#user-details > h6, div#user-details > p {
 }
 
 i.fa-share {
-    color: hsl(217, 19%, 35%);
+    color: inherit;
+}
+
+div#panel-share {
+    background-color: hsl(217, 19%, 35%);
+    width: 235px;
+    height: 50px;
+    border-radius: 20px;
 }
