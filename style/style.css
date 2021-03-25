@@ -74,7 +74,8 @@ div#share {
     height: 30px;
     border-radius: 30px;
     background-color: hsl(210, 46%, 95%);
-    color: #48556a;
+    color: hsl(217, 19%, 35%);
+    position: relative;
 }
 
 div#share, div#links {
@@ -103,15 +104,15 @@ i.fa-share {
 }
 
 div#share, div#panel-share {
-    transition: all 0.5s;
+    transition: all 0.2s;
 }
 
 div#panel-share {
     width: 235px;
     height: 50px;
     border-radius: 20px;
-    left: 810px;
-    top: 340px;
+    top: -60px;
+    left: -105px;
     display: none;
 }
 
@@ -151,4 +152,31 @@ div#links > p, div#links > a {
 
 img[alt*="icon"] {
     display: inherit;
+}
+
+/*Adaptações*/
+
+@media screen and (max-width: 758px) {
+    div#card {
+        flex-direction: column;
+        height: 500px;
+        width: 300px;
+        margin: 20px auto;
+    }
+
+    div#card, div#image {
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+    
+    div#image {
+        width: 100%;
+        height: 150px;
+        border-bottom-left-radius: 0px;
+    }
+
+    article {
+        width: 100%;
+        height: 350px;
+    }
 }
