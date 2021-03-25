@@ -74,7 +74,7 @@ div#share {
     height: 30px;
     border-radius: 30px;
     background-color: hsl(210, 46%, 95%);
-    color: hsl(217, 19%, 35%);
+    color: #48556a;
 }
 
 div#share, div#links {
@@ -102,6 +102,10 @@ i.fa-share {
     color: inherit;
 }
 
+div#share, div#panel-share {
+    transition: all 0.5s;
+}
+
 div#panel-share {
     width: 235px;
     height: 50px;
@@ -109,7 +113,6 @@ div#panel-share {
     left: 810px;
     top: 340px;
     display: none;
-    transition: all 2s;
 }
 
 div#panel-share, div#panel-share > div#arrow {
