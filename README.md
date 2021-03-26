@@ -18,10 +18,10 @@ Esse é uma das soluções de frontend mentor, não foi facil e não ficou total
 Você precisa apenas de um editor de código e obviamente de um navegador, recomendo usar o google chrome
 
 # Copie e cole no seu GIT
-$ git clone 
+$ git clone https://github.com/Pyedrown/desafio-article-preview-component.git
 
 # e em seguida use
-$ cd 
+$ cd desafio-article-preview-component
 
 ## Tecnologias
 
