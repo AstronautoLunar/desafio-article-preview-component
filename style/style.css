@@ -84,7 +84,7 @@ div.share-button, div#links {
 }
 
 div.share-button:hover {
-    background-color: hsl(214, 17%, 51%);
+    background-color: #6d7f97;
 }
 
 div.share-button:hover, div#links > p, div#share > p {
