@@ -5,12 +5,12 @@ body {
     font-family: Manrope;
 }
 
-div#card, article, div#panel-user, div#share, div#user , div#links {
+div#card, article, div#panel-user, div.share-button, div#user , div#links, div#share-responsive, div#share {
     display:flex;
     align-items: center;
 }
 
-div#card, div#panel-user {
+div#card, div#panel-user, div#share {
     justify-content: space-between;
 }
 
@@ -61,6 +61,7 @@ div#panel-user {
 
 div#user {
     width: 90%;
+    display: inherit;
 }
 
 div#user > img[alt="user"] {
@@ -69,7 +70,7 @@ div#user > img[alt="user"] {
     border-radius: 30px;
 }
 
-div#share {
+div.share-button {
     width: 30px;
     height: 30px;
     border-radius: 30px;
@@ -78,15 +79,15 @@ div#share {
     position: relative;
 }
 
-div#share, div#links {
+div.share-button, div#links {
     justify-content: center;
 }
 
-div#share:hover {
-    background-color: hsl(217, 19%, 35%);
+div.share-button:hover {
+    background-color: hsl(214, 17%, 51%);
 }
 
-div#share:hover, div#links > p {
+div.share-button:hover, div#links > p, div#share > p {
     color: white;
 }
 
@@ -97,13 +98,14 @@ div#user-details {
 div#user-details > h6, div#user-details > p {
     margin: 0;
     width: 100px;
+    display: inherit;
 }
 
 i.fa-share {
     color: inherit;
 }
 
-div#share, div#panel-share {
+div.share-button, div#panel-share, div#share-responsive {
     transition: all 0.2s;
 }
 
@@ -134,24 +136,33 @@ div#links {
     height: 50px;
 }
 
-div#links > p {
+div#links > p, div#share > p {
     letter-spacing: 10px;
     font-weight: 500;
     font-size: 10px;
 }
 
-div#links > a {
+div#links > a, div#share > a {
     text-decoration: none;
     color: black;
 }
 
-div#links > p, div#links > a {
+div#links > p, div#share > a {
     margin: 0 5px;
     display: inherit;
 }
 
 img[alt*="icon"] {
     display: inherit;
+}
+
+div#share-responsive {
+    width: 100%;
+    height: 90px;
+    background-color: hsl(217, 19%, 35%);
+    justify-content: space-around;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 /*Adaptações*/
@@ -162,11 +173,12 @@ img[alt*="icon"] {
         height: 500px;
         width: 300px;
         margin: 20px auto;
+        border-radius: 10px;
     }
 
-    div#card, div#image {
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
+    div#image {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
     }
     
     div#image {

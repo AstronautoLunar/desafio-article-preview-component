@@ -1,33 +1,54 @@
 const panelShare = window.document.getElementById('panel-share');
 
-const buttonShare = window.document.getElementById('share');
+const shareResponsive = window.document.getElementById('share-responsive');
+
+const panelUser = window.document.getElementById('panel-user');
+
+shareResponsive.style.display = 'none';
+
+const buttonShare1 = window.document.getElementsByClassName('share-button')[0];
+
+const buttonShare2 = window.document.getElementsByClassName('share-button')[1];
 
 panelShare.style.display = 'none';
-
-const aplicarClick = function (button, callback) {
-    button.onclick = callback;
-}
 
 const mediaQuerieList = matchMedia("(max-width: 758px)");
 
 const aplicarInteracaoResponsiva = function (mediaQuerieList) {
     if(mediaQuerieList.matches) {
-        // aplicarClick(buttonShare, () => {
-
-        // })
-    } else {
-    }
-    aplicarClick(buttonShare, () => {
-        if(panelShare.style.display == 'none') {
-            panelShare.style.display = 'block';
-            buttonShare.style.color = 'white';
-            buttonShare.style.backgroundColor = '#48556a';
-        } else {
-            panelShare.style.display = 'none';
-            buttonShare.style.color = '';
-            buttonShare.style.backgroundColor = '';
+        buttonShare1.onclick = () => {
+            if(shareResponsive.style.display == 'none') {
+                shareResponsive.style.display = 'flex';
+                panelUser.style.display = 'none';
+                buttonShare2.style.color = 'white';
+                buttonShare2.style.backgroundColor = '#6d7f97';
+            } else {
+                shareResponsive.style.display = 'none';
+                panelUser.style.display = 'flex';
+            }
         }
-    });
+        buttonShare2.onclick = () => {
+            if(shareResponsive.style.display == 'none') {
+                shareResponsive.style.display = 'flex';
+                panelUser.style.display = 'none';
+            } else {
+                shareResponsive.style.display = 'none';
+                panelUser.style.display = 'flex';
+            }
+        }
+    } else {
+        buttonShare1.onclick = () => {
+            if(panelShare.style.display == 'none') {
+                panelShare.style.display = 'block';
+                buttonShare1.style.color = 'white';
+                buttonShare1.style.backgroundColor = '#6d7f97';
+            } else {
+                panelShare.style.display = 'none';
+                buttonShare1.style.color = '';
+                buttonShare1.style.backgroundColor = '';
+            }
+        }
+    }
 }
 
 aplicarInteracaoResponsiva(mediaQuerieList);
