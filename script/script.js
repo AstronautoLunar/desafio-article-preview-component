@@ -31,11 +31,15 @@ const aplicarInteracaoResponsiva = function (mediaQuerieList) {
             if(shareResponsive.style.display == 'none') {
                 shareResponsive.style.display = 'flex';
                 panelUser.style.display = 'none';
+                panelShare.style.display = 'none';
             } else {
                 shareResponsive.style.display = 'none';
                 panelUser.style.display = 'flex';
             }
         }
+        panelShare.style.display = 'none';
+        buttonShare1.style.color = '';
+        buttonShare1.style.backgroundColor = '';
     } else {
         buttonShare1.onclick = () => {
             if(panelShare.style.display == 'none') {
@@ -48,6 +52,10 @@ const aplicarInteracaoResponsiva = function (mediaQuerieList) {
                 buttonShare1.style.backgroundColor = '';
             }
         }
+        buttonShare1.style.color = '';
+        buttonShare1.style.backgroundColor = '';
+        panelUser.style.display = 'flex';
+        shareResponsive.style.display = 'none';
     }
 }
 
