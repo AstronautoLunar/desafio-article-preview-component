@@ -1,13 +1,20 @@
 <h1 align="center">Article preview component</h1>
 
-<p align="center">Minha solução Article preview component</p>
+<div align="center">
+  <img
+    src="https://github.com/Pyedrown/desafio-article-preview-component/blob/master/presentation.PNG"
+    alt="presentation image"
+  />
+</div>
+
+<p align="center">Minha solução da plataforma Front-end-mentor</p>
 
 * [Sobre](#Sobre)
 * [Pre Requisitos](#Pre-requisitos)
 * [Tecnologias](#tecnologias)
 
 <h4 align="center">
-  Concluido
+  ✅ Concluido ✅
 </h4>
 
 ## Sobre
